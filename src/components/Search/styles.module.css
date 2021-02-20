@@ -1,0 +1,37 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  max-width: 560px;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.searchIconWrapper {
+  position: absolute;
+  color: #35495e;
+  left: 1rem;
+  display: flex;
+  align-self: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.searchInput {
+  outline: 0;
+  font-size: 1rem;
+  padding: 0.65rem 1rem 0.75rem 3rem;
+  border-radius: 10rem;
+  height: 2rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.searchInput:focus {
+  border-color: #4ea8de;
+}
+
+.searchInput:focus + .searchIconWrapper {
+  color: #4ea8de;
+}

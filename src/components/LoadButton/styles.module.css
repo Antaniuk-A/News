@@ -1,0 +1,45 @@
+.wrapper {
+  margin: 2rem;
+}
+
+.spinner {
+  pointer-events: none;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.3em solid transparent;
+  border-color: #eee;
+  border-top-color: #3E67EC;
+  border-radius: 50%;
+  animation: loadingspin 1s linear infinite;
+}
+
+@keyframes loadingspin {
+	100% {
+			transform: rotate(360deg)
+	}
+}
+
+.button {
+  background-color: #e4f2fa;
+  color: #399dda;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0.75rem 0.9rem;
+  font-size: 1rem;
+
+  border-radius: 0.15rem;
+  border: 1px solid #4ea8de;
+
+  transition: background-color 0.1s ease-in;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d2eaf8;
+}
+
+.hidden {
+  display: none;
+}
